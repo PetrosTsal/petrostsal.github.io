@@ -1,0 +1,8 @@
+<div class="card">
+  <h3><strong>{{ include.title }}</strong></h3>
+  <p>{{ include.subtitle }}</p>
+  {% for organizer in include.organizers %}
+    <h4><strong>{{ organizer.name }}</strong></h4>
+    <p>{{ organizer.text }}</p>
+  {% endfor %}
+</div>

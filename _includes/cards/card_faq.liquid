@@ -1,0 +1,10 @@
+<div class="card faq-card">
+  <input type="checkbox" id="faq-{{ include.index }}" class="faq-toggle">
+  <label for="faq-{{ include.index }}" class="faq-question">
+    <span class="faq-arrow">&#9654;</span>  <!-- Unicode ▶ -->
+    {{ include.title }}
+  </label>
+  <div class="faq-answer">
+    {{ include.answer }}
+  </div>
+</div>

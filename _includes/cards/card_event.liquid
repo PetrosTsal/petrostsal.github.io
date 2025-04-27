@@ -1,0 +1,11 @@
+<div class="card">
+  <h3><strong>{{ include.title }}</strong></h3>
+  {% if include.location %}
+    <p><strong>Where: {{ include.location }}</strong></p>
+  {% endif %}
+  {% if include.when %}
+    <p><strong>When: {{ include.when }}</strong></p>
+  {% endif %}
+  <p><i>{{ include.tag }}</i></p>
+  <p>{{ include.text }}</p>
+</div>

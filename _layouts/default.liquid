@@ -20,6 +20,10 @@
     <!-- Header -->
     {% include header.liquid %}
 
+    {% if page.hero %}
+      {% include hero.liquid title=page.title hero=page.hero subtitle=page.subtitle image=page.hero_image %}
+    {% endif %}
+
     <!-- Content -->
     <div class="container mt-5" role="main">
       {% if page.toc and page.toc.sidebar %}

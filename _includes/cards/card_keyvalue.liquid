@@ -1,0 +1,17 @@
+<div class="card">
+  <h3><strong>{{ include.title }}</strong></h3>
+  <p class="subtitle">{{ include.subtitle }}</p>
+
+  {% if include.keyvalue_type == "inline" %}
+    {% for item in include.items %}
+        <p><strong>{{ item.key }}: </strong>{{ item.value }}</p>
+    {% endfor %}
+  {% else %}
+  <dl>
+    {% for item in include.items %}
+      <dt><strong>{{ item.key }}</strong></dt>
+      <dd>{{ item.value }}</dd>
+    {% endfor %}
+  </dl>
+  {% endif %}
+</div>
