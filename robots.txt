@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://petrostsal.github.io/al-folio/sitemap.xml
+Sitemap: https://alshedivat.github.io/sitemap.xml
