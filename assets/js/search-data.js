@@ -393,21 +393,16 @@ ninja.data = [{
             window.location.href = "/blog/2015/formatting-and-links/";
           
         },
-      },{id: "agenda_cards-day-1",
-          title: 'Day 1',
-          description: "",
-          section: "Agenda_cards",handler: () => {
-              window.location.href = "/agenda_cards/day1/";
-            },},{id: "agenda_cards-day-2",
-          title: 'Day 2',
-          description: "",
-          section: "Agenda_cards",handler: () => {
-              window.location.href = "/agenda_cards/day2/";
-            },},{id: "agenda_cards-fututed-ai",
+      },{id: "agenda_cards-fututed-ai",
           title: 'FututEd AI',
           description: "",
           section: "Agenda_cards",handler: () => {
               window.location.href = "/agenda_cards/promo/";
+            },},{id: "agenda_cards-schedule",
+          title: 'Schedule',
+          description: "",
+          section: "Agenda_cards",handler: () => {
+              window.location.href = "/agenda_cards/schedule/";
             },},{id: "agenda_cards-where-and-when",
           title: 'Where and When',
           description: "",
@@ -418,6 +413,31 @@ ninja.data = [{
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/the_godfather/";
+            },},{id: "catalysts_cards-judges",
+          title: 'Judges',
+          description: "",
+          section: "Catalysts_cards",handler: () => {
+              window.location.href = "/catalysts_cards/judges/";
+            },},{id: "catalysts_cards-mentors",
+          title: 'Mentors',
+          description: "",
+          section: "Catalysts_cards",handler: () => {
+              window.location.href = "/catalysts_cards/mentors/";
+            },},{id: "catalysts_cards-scoring",
+          title: 'Scoring',
+          description: "",
+          section: "Catalysts_cards",handler: () => {
+              window.location.href = "/catalysts_cards/scoring/";
+            },},{id: "catalysts_cards-futured-ai",
+          title: 'FuturEd AI',
+          description: "",
+          section: "Catalysts_cards",handler: () => {
+              window.location.href = "/catalysts_cards/top/";
+            },},{id: "catalysts_cards-why-apply",
+          title: 'Why Apply',
+          description: "",
+          section: "Catalysts_cards",handler: () => {
+              window.location.href = "/catalysts_cards/why_apply/";
             },},{id: "faq_cards-what-is-a-hackathon",
           title: 'What is a hackathon?',
           description: "",
@@ -483,8 +503,8 @@ ninja.data = [{
           description: "",
           section: "Faq_cards",handler: () => {
               window.location.href = "/faq_cards/question9/";
-            },},{id: "home_cards-fututed-ai",
-          title: 'FututEd AI',
+            },},{id: "home_cards-at-a-glance",
+          title: 'At_a_glance',
           description: "",
           section: "Home_cards",handler: () => {
               window.location.href = "/home_cards/at_a_glance/";
