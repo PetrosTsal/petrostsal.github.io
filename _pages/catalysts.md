@@ -52,7 +52,7 @@ nav_order: 4
     {% endcase %}
   {% endfor %}
   <div class="page-buttons">
-    <a href="" class="btn primary">Register</a>
-    <a href="" class="btn secondary">Contact Us</a>
+    <a href="https://forms.gle/3fAafWCyVxya5jf6A" class="btn primary">Register</a>
+    <a href="https://forms.gle/hJ5BtdgpaFLxFvap6" class="btn secondary">Contact Us</a>
   </div>
 </section>

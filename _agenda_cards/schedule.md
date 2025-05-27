@@ -16,14 +16,17 @@ schedule:
         size: '3'
       - time: 13:00 - 14:00
         title: Lunch break
+        size: '1'
       - time: 14:00 - 18:20
         title: Continue hacking
         icon: true
         size: '3'
       - time: 18:30 - 19:00
         title: Pitch workshop
+        size: '1'
       - time: 19:00 - 20:00
         title: Pitch workshop
+        size: '1'
 
   - date: Friday, 3 October 2025
     items:

@@ -1,9 +1,18 @@
 {% capture footer_contents %}
-  &copy; Copyright {{ site.time | date: '%Y' }}
-  {{ site.title }}. All rights reserved. <br>
-  <a href="{{ site.url }}{{ site.policies }}#terms">Terms</a> | 
-  <a href="{{ site.url }}{{ site.policies }}#privacy">Privacy</a> | 
-  <a href="{{ site.url }}{{ site.policies }}#code-of-contact">Code of Contact</a> <br>
+  <img src="{{ site.baseurl }}/assets/img/logos/Logo.svg" alt="Icon" class="small-image">
+  <div class="badge-column">
+    {% include badge.liquid
+      img="pin"
+      text="UOC, Computer Science Department" %}
+    {% include badge.liquid
+      img="calendar"
+      text="2-3 October 2025" %}
+  </div>
+  <div class="footer-links">
+    <a href="{{ site.url }}{{ site.policies }}#terms">Terms</a>
+    <a href="{{ site.url }}{{ site.policies }}#privacy">Privacy</a>
+    <a href="{{ site.url }}{{ site.policies }}#code-of-contact">Code of Contact</a>
+  </div>
   {{ site.footer_text }}
   {% if site.impressum_path %}
     <a href="{{ site.url }}{{ site.baseurl }}{{ site.impressum_path }}">Impressum</a>.

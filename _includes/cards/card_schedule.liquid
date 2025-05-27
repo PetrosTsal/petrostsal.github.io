@@ -1,20 +1,24 @@
-<div class="container card schedule-grid">
-  {% for day in include.schedule %}
-    <div class="schedule-day">
-      <h3 class="schedule-date">{{ day.date }}</h3>
-      <div class="schedule-items">
-        {% for item in day.items %}
-          <div class="schedule-item size-{{ item.size }} {% if item.icon %}highlight{% endif %}">
-            <div class="time">{{ item.time }}</div>
-            <div class="text">
-              {% if item.icon %}
-                <span class="icon">💻</span>
-              {% endif %}
-              {{ item.title }}
+<div class="card schedule-wrapper">
+  <div class="schedule-grid">
+    {% for day in include.schedule %}
+      <div class="schedule-day">
+        <h3 class="pffbold">{{ day.date }}</h3>
+        <div class="schedule-items">
+          {% for item in day.items %}
+            <div class="schedule-item-grid">
+              <div class="schedule-item size-{{ item.size }}">
+                <div class="pffmedium">{{ item.time }}</div>
+                <div class="text {% if item.icon %}blue-text{% endif %}">
+                  {% if item.icon %}
+                    <img class="icon" src="/assets/img/icons/laptop-regular1.svg" alt="laptop">
+                  {% endif %}
+                  {{ item.title }}
+                </div>
+              </div>
             </div>
-          </div>
-        {% endfor %}
+          {% endfor %}
+        </div>
       </div>
-    </div>
-  {% endfor %}
+    {% endfor %}
+  </div>
 </div>
