@@ -1,11 +1,16 @@
-<section class="hero-banner"{% if include.image %} style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('{{ include.image }}');"{% endif %}>
-  <div class="hero-inner">
-    <h1>{{ site.title }}</h1>
-    {% if include.hero %}
-      <h1>{{ include.hero }}</h1>
-    {% endif %}
-    {% if include.subtitle %}
-      <p class="subtitle">{{ include.subtitle }}</p>
-    {% endif %}
+<section class="hero">
+  <div class="hero-left">
+    <img src="{{ site.baseurl }}/assets/img/logos/Logo.svg" alt="Icon" class="small-image">
+    <h3>
+      Collaborate and innovate for <span style="color: #ff4fc3;">2 days</span>, <br>
+      and unleash AI's potential for education!
+    </h3>
+    <p>
+      Team up with mentors and industry leaders to transform <br>
+      your AI-powered vision for education into reality.
+    </p>
+  </div>
+  <div class="hero-right">
+    <img src="{{ site.baseurl }}/assets/img/Face.svg" alt="Main visual">
   </div>
 </section>

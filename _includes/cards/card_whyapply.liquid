@@ -1,0 +1,13 @@
+<div class="container card">
+  <h1>{{ include.title }}</h1>
+  <p class="subtitle">{{ include.subtitle }}</p>
+  <div class="feature-items">
+    {% for feature in include.items %}
+      <div class="feature-item">
+        <img src="{{ feature.icon | relative_url }}" alt="{{ feature.title }}">
+        <h3>{{ feature.title }}</h3>
+        <p>{{ feature.text }}</p>
+      </div>
+    {% endfor %}
+  </div>
+</div>

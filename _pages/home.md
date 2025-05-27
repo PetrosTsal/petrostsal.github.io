@@ -43,7 +43,8 @@ latest_posts:
       {% when "basic" %}
         {% include cards/card_basic.liquid
           title=card.title
-          text=card.text %}
+          text=card.text
+          sec_text=card.sec_text %}
       {% when "organizers" %}
         {% include cards/card_organizers.liquid
           title=card.title
@@ -55,31 +56,28 @@ latest_posts:
           subtitle=card.subtitle
           keyvalue_type=card.keyvalue_type
           items=card.items %}
+      {% when "timeline" %}
+        {% include cards/card_timeline.liquid
+          title=card.title
+          subtitle=card.subtitle
+          timeline=card.timeline %}
+      {% when "whyapply" %}
+        {% include cards/card_whyapply.liquid
+            title=card.title
+            subtitle=card.subtitle
+            items=card.items %}
+      {% when "prizes" %}
+        {% include cards/card_prizes.liquid
+            title=card.title
+            subtitle=card.subtitle
+            prizes=card.prizes 
+            buttons=card.buttons %}
       {% else %}
         <div class="card">Unknown card type: {{ card.type }}</div>
     {% endcase %}
   {% endfor %}
-</section>
-
-<section>
-<form action="https://formsubmit.co/YOUR_EMAIL_HERE" method="POST" class="contact-form">
-  <h2><strong>Contact Us</strong></h2>
-  <p>Have questions or need more information? Reach out to us!</p>
-  
-  <label for="name">Name</label>
-  <input type="text" name="name" id="name" placeholder="Your Name" required>
-
-  <label for="email">Email</label>
-  <input type="email" name="email" id="email" placeholder="Your Email" required>
-
-  <label for="message">Message</label>
-  <textarea name="message" id="message" rows="3" placeholder="Your Message" required></textarea>
-
-  <!-- Optional fields -->
-  <input type="hidden" name="_next" value="{{ site.url }}{{ site.baseurl }}/thanks/">
-  <input type="hidden" name="_captcha" value="false">
-  <input type="text" name="_honey" style="display:none">
-
-  <button type="submit">Send Message</button>
-</form>
+  <div class="page-buttons">
+    <a href="" class="btn primary">Register</a>
+    <a href="" class="btn secondary">Contact Us</a>
+  </div>
 </section>

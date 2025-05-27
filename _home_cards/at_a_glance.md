@@ -1,5 +1,4 @@
 ---
-title: FututEd AI
 location: University of Crete, Heraklion
 when: 2-3 Oct 2025
 tag: Code the Future of Learning

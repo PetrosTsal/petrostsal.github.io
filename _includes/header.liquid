@@ -1,5 +1,13 @@
 <header>
   <!-- Nav Bar -->
+  {% if site.enable_progressbar %}
+    <!-- Scrolling Progress Bar -->
+    <progress id="progress" value="0">
+      <div class="progress-container">
+        <span class="progress-bar"></span>
+      </div>
+    </progress>
+  {% endif %}
   <nav id="navbar" class="navbar navbar-light navbar-expand-sm {% if site.navbar_fixed %}fixed-top{% else %}sticky-top{% endif %}" role="navigation">
     <div class="container">
       {% if page.permalink != '/' %}
@@ -130,20 +138,12 @@
 
           {% endif %}
           <li class="nav-item ml-auto register-link">
-            <a href="https://forms.gle/3fAafWCyVxya5jf6A" class="btn btn-primary" target="_blank">
-              Register Now
-            </a>
+            <div class="page-buttons">
+              <a href="" class="btn primary">Register</a>
+            </div>
           </li>
         </ul>
       </div>
     </div>
   </nav>
-  {% if site.enable_progressbar %}
-    <!-- Scrolling Progress Bar -->
-    <progress id="progress" value="0">
-      <div class="progress-container">
-        <span class="progress-bar"></span>
-      </div>
-    </progress>
-  {% endif %}
 </header>

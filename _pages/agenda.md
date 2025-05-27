@@ -34,8 +34,17 @@ nav_order: 2
           subtitle=card.subtitle
           keyvalue_type=card.keyvalue_type
           items=card.items %}
+      {% when "schedule" %}
+        {% include cards/card_schedule.liquid
+          title=card.title
+          subtitle=card.subtitle
+          schedule=card.schedule %}
       {% else %}
         <div class="card">Unknown card type: {{ card.type }}</div>
     {% endcase %}
   {% endfor %}
+  <div class="page-buttons">
+      <a href="" class="btn primary">Register</a>
+      <a href="" class="btn secondary">Contact Us</a>
+  </div>
 </section>

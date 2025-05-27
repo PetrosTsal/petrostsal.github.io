@@ -1,31 +1,68 @@
 
 
 body {
-    background-image: url('../img/background.jpg');
+    background-image: url('../img/AI_PHOTO_TOYBANO_2.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
 }
 
-.hero-banner {
-    width: 100%;
-    margin: 0;
-    padding: 6rem 3rem;
-    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('/assets/img/banner.jpg') center/cover no-repeat;
-    color: white;
-    text-align: center;
+// .hero-banner {
+//     width: 100%;
+//     margin: 0;
+//     padding: 6rem 3rem;
+//     background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('/assets/img/banner.jpg') center/cover no-repeat;
+//     color: white;
+//     text-align: center;
   
-    h1 {
-      font-size: 3rem;
-      margin: 0;
-    }
+//     h1 {
+//       font-size: 3rem;
+//       margin: 0;
+//     }
   
-    .subtitle {
-      font-size: 1.5rem;
-      margin-top: 1rem;
-      color: #f0f0f0;
-    }
+//     .subtitle {
+//       font-size: 1.5rem;
+//       margin-top: 1rem;
+//       color: #f0f0f0;
+//     }
+// }
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 30px;
+  gap: 40px;
+  flex-wrap: wrap; /* enables responsiveness */
+  
+  color: white;
+}
+
+.hero-right img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 20px;
+}
+
+.hero-left {
+  max-width: 500px;
+  text-align: left;
+}
+
+.hero-left .small-image {
+  width: 215px;
+  margin-bottom: 20px;
+}
+
+.hero-left h1 {
+  font-size: 2.5rem;
+  margin: 0 0 15px;
+}
+
+.hero-left p {
+  font-size: 1.1rem;
+  line-height: 1.6;
 }
   
 .card-grid {
@@ -35,16 +72,24 @@ body {
 }
   
 .card {
-    background: --global-color;
     padding: 1.5rem;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    background-color: transparent;
+    box-shadow: none;
+    text-align: center;
+    font-size: 18px;
+}
+
+.container-unlocked {
+  width: 100%;
+  max-width: none !important;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 .card dl {
     margin-top: 1rem;
 }
-  
+ 
 .card dt {
     font-weight: bold;
     margin-top: 0.75rem;
@@ -54,6 +99,442 @@ body {
     margin: 0 0 0.5rem 0;
     color: #818181;
 }
+
+.card h1 {
+    margin-bottom: 30px;
+}
+
+.double-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 0px;
+  gap: 40px;
+  flex-wrap: wrap; /* enables responsiveness */
+  
+  color: white;
+}
+
+.card-right {
+  width: 100%;
+  max-width: 500px;
+  text-align: left;
+
+  .uni {
+    font-size: 30px;
+  }
+
+  .university-info {
+    display: flex;
+    align-items: left;
+    gap: 12px;
+    justify-content: left;
+    margin-bottom: 1rem;
+  }
+
+  .university-info img {
+    width: 70px;
+    height: auto;
+  }
+
+  .university-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* aligns text with top of logo */
+  }
+
+  .university-name {
+    font-size: 1.4em
+  }
+
+  .department-name {
+    font-size: 0.95em;
+    color: #C1C5C8;
+  }
+}
+
+.card-left {
+  max-width: 500px;
+  text-align: left;
+
+  .university-info {
+    display: flex;
+    align-items: left;
+    gap: 12px;
+    justify-content: left;
+    margin-bottom: 1rem;
+  }
+}
+
+.subtitle {
+    color: #C1C5C8;
+    margin-bottom: 40px;
+}
+
+.pink {
+    color: #E84DB5;
+    background-color: transparent !important;
+}
+
+.timeline-wrapper {
+  display: flex;
+  justify-content: center;
+  padding: 2rem 1rem;
+}
+
+.timeline {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-left: 40px;
+  border-left: 4px solid white;
+}
+
+.timeline-item {
+  position: relative;
+  display: flex;
+  align-items: center; /* aligns dot with content vertically */
+  margin-bottom: 60px;
+}
+
+.timeline-dot {
+  position: absolute;
+  left: -55px; /* aligns with center of the border line */
+  width: 25px;
+  height: 25px;
+  background-color: #ff4fc3;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.timeline-content {
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 1px solid #ff4fc3;
+  padding: 20px;
+  border-radius: 8px;
+  color: white;
+  max-width: 500px;
+}
+
+.timeline-content h3 {
+  margin-top: 0;
+  font-size: 1.2rem;
+  color: white;
+}
+
+.timeline-content .date {
+  color: #ccc;
+  font-size: 0.95rem;
+  margin-bottom: 10px;
+}
+
+.feature-card {
+  padding: 2rem;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid #ff4fc3;
+  border-radius: 8px;
+  color: white;
+}
+
+.feature-items {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 2.5rem;
+}
+
+.feature-item {
+  text-align: left;
+}
+
+.feature-item img {
+  width: 60px;
+  height: auto;
+  margin-bottom: 1rem;
+}
+
+.feature-item h3 {
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+}
+
+.feature-item p {
+  font-size: 1rem;
+  color: #ccc;
+}
+
+.prize-card {
+  text-align: center;
+  padding: 3rem 1rem;
+  color: white;
+}
+
+.prize-card .subtitle {
+  max-width: 800px;
+  margin: 0 auto 2rem;
+  font-size: 1.1rem;
+  color: #ccc;
+}
+
+.prize-top {
+  margin-bottom: 2rem;
+}
+
+.prize-bottom {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15rem;
+  margin-bottom: 2rem;
+}
+
+.prize-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1.5rem;
+}
+
+.prize-item .amount {
+  font-size: 4rem;
+}
+
+.prize-item .label {
+  margin-top: 0.5rem;
+  font-size: 1.5rem;
+  color: #aaa;
+}
+
+/* Highlight center prize */
+.prize-item.highlight .amount {
+  font-size: 6rem;
+}
+
+.page-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.page-buttons .btn {
+  padding: 0.75rem 1.5rem;
+  border-radius: 30px;
+  font-weight: 500;
+  border: 1px solid #ff4fc3;
+  transition: 0.3s ease;
+}
+
+.page-buttons .btn.primary {
+  background: #ff4fc3;
+  color: white;
+}
+
+.page-buttons .btn.secondary {
+  background: transparent;
+  color: white;
+}
+
+.schedule-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.schedule-day {
+  border: 1px solid #ff4fc3;
+  border-radius: 10px;
+  padding: 1.5rem;
+  text-align: left;
+}
+
+.schedule-date {
+  color: white;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.schedule-item {
+  //background: rgba(255, 255, 255, 0.05);
+
+  background: rgba(87, 47, 146, 0.7);
+  border-radius: 8px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  color: white;
+}
+
+.size-1 {
+  grid-row: span 1;
+}
+
+.size-2 {
+  grid-row: span 2;
+}
+
+.size-3 {
+  grid-row: span 3;
+}
+
+.size-4 {
+  grid-row: span 4;
+}
+
+.schedule-item .time {
+  font-weight: bold;
+  color: #ccc;
+  margin-bottom: 0.5rem;
+}
+
+.schedule-item .text {
+  display: flex;
+  align-items: left;
+  gap: 0.5rem;
+}
+
+.schedule-item.highlight {
+  color: #00f5ff;
+}
+
+.schedule-item .icon {
+  font-size: 1.2rem;
+}
+
+.judges-section {
+  padding: 2rem;
+  color: #fff;
+  font-family: 'Helvetica Neue', sans-serif;
+}
+
+.judges-title {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  color: white;
+}
+
+.judges-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.judge-card {
+  border: 1px solid #ff4fc3;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 2rem;
+  max-width: 900px;
+  margin: 0 auto;
+  backdrop-filter: blur(10px);
+  text-align: left;
+}
+
+.judge-header {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.judge-photo {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.judge-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.judge-name {
+  margin: 0;
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.judge-title {
+  margin: 0;
+  font-size: 1rem;
+  opacity: 0.8;
+}
+
+.judge-bio {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-top: 0.5rem;
+}
+
+.scoring-card {
+  background: transparent;
+  padding: 2rem;
+  max-width: 70%;
+  margin: 0 auto;
+  text-align: center;
+  color: #fff;
+}
+
+.scoring-title {
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+}
+
+.score-steps {
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+}
+
+.score-step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 0.95rem;
+}
+
+.score-circle {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 2px solid #ff4fc3;
+  background: rgba(255, 79, 195, 0.2); /* pink glass tint */
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  color: #fff;
+}
+
+.final-score-label {
+  margin-bottom: 0.3rem;
+  font-weight: bold;
+}
+
+.final-score-box {
+  display: inline-block;
+  border: 1px solid #ff4fc3;
+  background: rgba(255, 79, 195, 0.08); /* pink glass tint */
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  color: #fff;
+  margin-bottom: 1rem;
+}
+
+.min-requirement-note {
+  font-size: 0.85rem;
+  opacity: 0.7;
+}
+
 
 .contact-form {
     max-width: 600px;
@@ -114,6 +595,7 @@ body {
     margin-bottom: 1rem;
     padding: 1rem;
     overflow: hidden;
+    background: rgba(255, 255, 255, 0.2);;
 }
   
 .faq-answer {
@@ -122,6 +604,7 @@ body {
     transition: max-height 0.4s ease, padding 0.4s ease;
     background: --global-color;
     padding: 0 1rem;
+    text-align: left;
 }
   
 .faq-toggle {
@@ -135,7 +618,6 @@ body {
 
 .faq-question {
     display: flex;
-    align-items: center;
     gap: 0.75rem;
     padding: 1rem;
     background: --global-color;
@@ -172,4 +654,34 @@ body {
 .navbar {
     padding-top: 1rem;
     padding-bottom: 1rem;
+}
+
+.location-badge {
+  display: inline-flex;
+  align-items: center;
+  background: linear-gradient(to right, #4e1a78, #5e2a88);
+  border: 2px solid #ff4fc3;
+  color: white;
+  border-radius: 40px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: 500;
+  gap: 12px;
+  box-shadow: 0 0 10px rgba(255, 79, 195, 0.2);
+  max-width: fit-content;
+}
+
+.location-badge .icon {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+}
+
+.badge-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px; /* space between badges */
+  flex-wrap: wrap; /* wrap on smaller screens */
+  margin: 40px 0;
 }

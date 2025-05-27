@@ -1,0 +1,22 @@
+<div class="card prize-card">
+  <h1>{{ include.title }}</h1>
+  <p class="subtitle">{{ include.subtitle }}</p>
+
+  <div class="prize-top">
+    <div class="prize-item highlight">
+      <div class="amount">{{ include.prizes[1].amount }} <span>€</span></div>
+      <div class="label">{{ include.prizes[1].label }}</div>
+    </div>
+  </div>
+
+  <div class="prize-bottom">
+    <div class="prize-item">
+      <div class="amount">{{ include.prizes[0].amount }} <span>€</span></div>
+      <div class="label">{{ include.prizes[0].label }}</div>
+    </div>
+    <div class="prize-item">
+      <div class="amount">{{ include.prizes[2].amount }} <span>€</span></div>
+      <div class="label">{{ include.prizes[2].label }}</div>
+    </div>
+  </div>
+</div>

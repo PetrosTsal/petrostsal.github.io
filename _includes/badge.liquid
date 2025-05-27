@@ -1,0 +1,6 @@
+<div class="location-badge">
+  {% if include.img %}
+    <img src="{{ include.img | relative_url }}" alt="icon" class="icon">
+  {% endif %}
+  <span class="text">{{ include.text | default: "Location text missing" }}</span>
+</div>
