@@ -232,6 +232,9 @@ plugins:
   - jekyll-twitter-plugin
   - jemoji
 
+jekyll-minifier:
+  compress_css: false
+
 # Sitemap settings
 defaults:
   - scope:
