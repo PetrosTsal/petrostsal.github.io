@@ -308,7 +308,7 @@ body {
 
 @media (max-width: 600px) {
   .timeline {
-    padding-left: 20px; /* less padding */
+    padding-left: 0px; /* less padding */
   }
 
   .timeline::before {
@@ -457,28 +457,29 @@ body {
 
 .schedule-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
   gap: 2rem;
   max-width: 100%;    /* ✅ limits total grid width */
   margin: 0 auto;      /* ✅ centers the whole grid horizontally */
   padding: 0 1rem;     /* ✅ side padding for mobile */
-  box-sizing: border-box;
+  justify-items: center;
 }
 
 .schedule-day {
   width: 100%;
-  max-width: none;
+  max-width: 100%;
+  margin: 0;
+  padding: 1.5rem;
   box-sizing: border-box;
   border: 1px solid var(--global-pink);
   border-radius: 10px;
-  padding: 1.5rem;
   text-align: left;
 }
 
 .schedule-item-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  grid-auto-rows: 100px; /* 👈 default height of each "row" unit */
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  grid-auto-rows: 120px; /* 👈 default height of each "row" unit */
   gap: 2rem;
   max-width: 800px;
   margin: 0 auto;
