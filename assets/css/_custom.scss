@@ -3,6 +3,7 @@
     --global-pink: #E84DB5;
     --global-subtitle: #C1C5C8;
     --global-blue: #24FFFB;
+    --global-white: white;
 }
 
 @font-face {
@@ -56,6 +57,7 @@ body {
     background-attachment: local;
     background-position: center;
     font-family: "PFFBook", sans-serif;
+    color: var(--global-white);
 }
 
 // .hero-banner {
@@ -165,7 +167,6 @@ body {
   padding: 60px 0px;
   gap: 40px;
   flex-wrap: wrap; /* enables responsiveness */
-  
   color: white;
 }
 
@@ -336,7 +337,6 @@ body {
 
 .feature-item p {
   font-size: 1rem;
-  color: #ccc;
 }
 
 .prize-card {
@@ -349,7 +349,6 @@ body {
   max-width: 800px;
   margin: 0 auto 2rem;
   font-size: 1.1rem;
-  color: #ccc;
 }
 
 .prize-top {
@@ -379,7 +378,7 @@ body {
 .prize-item .label {
   margin-top: 0.5rem;
   font-size: 1.5rem;
-  color: #aaa;
+  color: var(--global-subtitle);
 }
 
 /* Highlight center prize */
@@ -575,7 +574,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-size: 0.95rem;
+  font-size: 0.95rem; 
 }
 
 .score-circle {
@@ -683,7 +682,6 @@ body {
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.4s ease, padding 0.4s ease;
-    background: --global-color;
     padding: 0 1rem;
     text-align: left;
 }
