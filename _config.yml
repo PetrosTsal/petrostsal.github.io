@@ -221,7 +221,7 @@ plugins:
   - jekyll-imagemagick
   - jekyll-jupyter-notebook
   - jekyll-link-attributes
-  - jekyll-minifier
+#  - jekyll-minifier
   - jekyll-paginate-v2
   - jekyll-regex-replace
   - jekyll/scholar
@@ -231,9 +231,6 @@ plugins:
   - jekyll-toc
   - jekyll-twitter-plugin
   - jemoji
-
-jekyll-minifier:
-  compress_css: false
 
 # Sitemap settings
 defaults:
