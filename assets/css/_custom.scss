@@ -457,14 +457,18 @@ body {
 
 .schedule-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   gap: 2rem;
-  max-width: 80%;    /* ✅ limits total grid width */
+  max-width: 100%;    /* ✅ limits total grid width */
   margin: 0 auto;      /* ✅ centers the whole grid horizontally */
   padding: 0 1rem;     /* ✅ side padding for mobile */
+  box-sizing: border-box;
 }
 
 .schedule-day {
+  width: 100%;
+  max-width: none;
+  box-sizing: border-box;
   border: 1px solid var(--global-pink);
   border-radius: 10px;
   padding: 1.5rem;
@@ -481,6 +485,7 @@ body {
 }
 
 .schedule-item {
+  width: 100%;
   background: rgba(232, 77, 181, 0.25);
   border-radius: 8px;
   padding: 1rem;
