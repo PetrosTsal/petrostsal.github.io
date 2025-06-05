@@ -2,7 +2,7 @@
   <input type="checkbox" id="faq-{{ include.index }}" class="faq-toggle">
   <label for="faq-{{ include.index }}" class="faq-question">
     <span class="faq-arrow">&#9654;</span>  <!-- Unicode ▶ -->
-    {{ include.title }}
+    <span class="text">{{ include.title }}</span>
   </label>
   <div class="faq-answer">
     {{ include.answer }}

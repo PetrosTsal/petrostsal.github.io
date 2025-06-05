@@ -332,6 +332,31 @@ body {
   }
 }
 
+@media (max-width: 400px) {
+  .timeline {
+    padding-left: 20px; /* less padding */
+  }
+
+  .timeline::before {
+    left: 0;
+    top: 80px;            /* adjust start */
+    height: 1200px;
+  }
+
+  .timeline-dot {
+    left: -35px; /* pull it in so it stays on-screen */
+  }
+
+  .timeline-item {
+    align-items: center;
+    text-align: left;
+  }
+
+  .timeline-content {
+    max-width: 100%; /* allow content to shrink naturally */
+  }
+}
+
 .feature-card {
   padding: 2rem;
   background: rgba(255, 255, 255, 0.05);
@@ -460,9 +485,9 @@ body {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
   gap: 2rem;
-  max-width: 100%;    /* ✅ limits total grid width */
-  margin: 0 auto;      /* ✅ centers the whole grid horizontally */
-  padding: 0 1rem;     /* ✅ side padding for mobile */
+  max-width: 100%;    /* limits total grid width */
+  margin: 0 auto;      /* centers the whole grid horizontally */
+  padding: 0 1rem;     /* side padding for mobile */
   justify-items: center;
 }
 
@@ -480,7 +505,7 @@ body {
 .schedule-item-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  grid-auto-rows: 120px; /* 👈 default height of each "row" unit */
+  grid-auto-rows: 120px; /* default height of each "row" unit */
   gap: 2rem;
   max-width: 800px;
   margin: 0 auto;
@@ -736,7 +761,11 @@ body {
     cursor: pointer;
     font-size: 1.1rem;
     font-weight: bold;
-  }
+
+    .text {
+      padding-top: 2px;
+    }
+}
   
 .faq-arrow {
     transition: transform 0.3s ease;
@@ -767,6 +796,14 @@ body {
   gap: 12px;
   box-shadow: 0 0 10px rgba(255, 79, 195, 0.2);
   max-width: fit-content;
+
+  .text {
+    padding-top: 5px;
+  }
+
+  a {
+    color: white;
+  }
 }
 
 .location-badge .icon {

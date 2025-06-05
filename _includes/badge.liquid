@@ -3,11 +3,12 @@
     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="icon" viewBox="0 0 16 16">
       <path d="M8 0a5.53 5.53 0 0 0-5.5 5.5c0 3.313 5.5 10.5 5.5 10.5s5.5-7.187 5.5-10.5A5.53 5.53 0 0 0 8 0zm0 8a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5z"/>
     </svg>
+    <span class="text"><a href="https://maps.app.goo.gl/6Wf4TNeZBzkwLYLJ9">{{ include.text | default: "Location text missing" }}</a></span>
   {% else %}
     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 24 24" class="icon">
       <path d="M19 4h-1V2h-2v2H8V2H6v2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 16H5V9h14v11zm0-13H5V6h14v1z"/>
       <path d="M10.293 15.293 8.5 13.5 7.086 14.914l3.207 3.207 5.207-5.207-1.414-1.414z"/>
     </svg>
+    <span class="text">{{ include.text | default: "Location text missing" }}</span>
   {% endif %}
-  <span class="text">{{ include.text | default: "Location text missing" }}</span>
 </div>
